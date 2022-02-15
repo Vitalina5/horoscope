@@ -3,7 +3,7 @@ import { data1 } from "./data1";
 import CalendarSlide from "./CalendarSlide";
 
 export default function Calendar() {
-    const [calendars, setCalendars] = useState(data1);
+    const [calendars] = useState(data1);
     const [showText, setShowText] = useState(false);
 
     const showTextClick = (element) => {
