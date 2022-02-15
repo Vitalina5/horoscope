@@ -1,38 +1,137 @@
-.App {
-  text-align: center;
+body {
+  background: linear-gradient(to top, #E2D1C2, #FEF4F3) fixed;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.picture {
+  margin-bottom: 25px;
+  height: auto;
+  max-width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav {
+  background:  #DBEAF6;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  border: solid 7px #b6d8f5;
+  border-radius: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.link {
+padding: 10px 40px;
+text-decoration: none;
+color: #154674;
+text-transform: uppercase;
+font-family: 'Encode Sans Expanded', sans-serif;
+}
+
+.change {
+  background-color: #c5ddf1;
+  color: #154674;
+  padding: 7px;
+  border-radius: 5px;
+  border: solid 2px #80b7e7;
+}
+
+button {
+  margin: 10px;
+}
+
+h1 {
+  color: #154674;
+  font-family: 'Encode Sans Expanded', sans-serif;
+}
+
+.cont {
+  display: flex;
+  justify-content: center;
+}
+
+.signs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.signs-card {
+  padding: 2%;
+  flex-grow: 1;
+  flex-basis: 16%;
+}
+
+h3, p {
+  color: #0d3d6b;
+  font-family: 'Encode Sans Expanded', sans-serif;
+  line-height: 1.5;
+}
+
+h2 {
+  color: #0d3d6b;
+  font-family: 'Encode Sans Expanded', sans-serif;
+}
+
+.main {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 80vh;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+  background:  #faf5f2;
+  display: flex;
+  justify-content: center;
+  border: solid 7px #ffffff;
+  border-radius: 15px;
+  width: 60%;
+  margin: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn {
+  margin-top: 25px;
 }
+
+.contName {
+  width: 350px;
+}
+
+@media all and (max-width: 1024px) {
+    .sign-image {
+      margin: 0 auto;
+      display: block;
+    }
+
+    h3 {
+      text-align: center;
+    }
+    
+    .signs-card{
+      width: auto;
+      
+    }
+}
+
+
+
+@media all and (max-width: 600px) {
+  .link {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .sign-image {
+    width: 350px;
+    height: 330px;
+  }
+
+}
+
